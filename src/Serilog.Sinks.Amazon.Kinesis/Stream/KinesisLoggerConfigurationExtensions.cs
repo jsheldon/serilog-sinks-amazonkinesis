@@ -57,7 +57,7 @@ namespace Serilog.Sinks.Amazon.Kinesis.Stream
             return loggerConfiguration.Sink(sink, options.MinimumLogEventLevel ?? LevelAlias.Minimum);
         }
 
-        
+
         /// <summary>
         /// Adds a sink that writes log events as documents to Amazon Kinesis.
         /// </summary>
@@ -69,6 +69,7 @@ namespace Serilog.Sinks.Amazon.Kinesis.Stream
         /// <param name="batchPostingLimit"></param>
         /// <param name="period"></param>
         /// <param name="minimumLogEventLevel"></param>
+        /// <param name="customFormatter"></param>
         /// <param name="onLogSendError"></param>
         /// <param name="shared"></param>
         /// <returns>Logger configuration, allowing configuration to continue.</returns>

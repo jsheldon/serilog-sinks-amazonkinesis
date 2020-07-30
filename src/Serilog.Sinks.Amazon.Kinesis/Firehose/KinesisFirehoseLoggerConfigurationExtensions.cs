@@ -69,6 +69,7 @@ namespace Serilog.Sinks.Amazon.Kinesis.Firehose
         /// <param name="batchPostingLimit"></param>
         /// <param name="period"></param>
         /// <param name="minimumLogEventLevel"></param>
+        /// <param name="customFormatter"></param>
         /// <param name="onLogSendError"></param>
         /// <param name="shared"></param>
         /// <returns>Logger configuration, allowing configuration to continue.</returns>

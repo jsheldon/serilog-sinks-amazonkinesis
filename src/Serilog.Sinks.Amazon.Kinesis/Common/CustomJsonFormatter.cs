@@ -12,8 +12,8 @@ namespace Serilog.Sinks.Amazon.Kinesis.Common
     /// <summary>
     /// wut
     /// </summary>
-        public CustomJsonFormatter(bool omitEnclosingObject = false, string closingDelimiter = null, bool renderMessage = false, IFormatProvider formatProvider = null)
-            : base(omitEnclosingObject, closingDelimiter, renderMessage, formatProvider)
+        public CustomJsonFormatter(string closingDelimiter = null, bool renderMessage = false, IFormatProvider formatProvider = null)
+            : base(closingDelimiter, renderMessage, formatProvider)
         {
         }
 

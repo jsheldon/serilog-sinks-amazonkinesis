@@ -9,6 +9,10 @@ namespace Serilog.Sinks.Amazon.Kinesis.Common
     /// </summary>
     public abstract class KinesisSinkOptionsBase : ILogShipperOptions
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="streamName"></param>
         protected KinesisSinkOptionsBase(string streamName)
         {
             if (streamName == null) throw new ArgumentNullException("streamName");

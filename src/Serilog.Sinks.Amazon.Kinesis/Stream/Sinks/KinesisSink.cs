@@ -45,6 +45,9 @@ namespace Serilog.Sinks.Amazon.Kinesis.Stream.Sinks
             _minimumAcceptedLevel = _state.Options.MinimumLogEventLevel;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         ~KinesisSink()
         {
             Dispose(true);
